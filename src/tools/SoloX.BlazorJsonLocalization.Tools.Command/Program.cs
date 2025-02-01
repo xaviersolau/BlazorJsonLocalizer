@@ -11,7 +11,7 @@ namespace SoloX.BlazorJsonLocalization.Tools
     /// <summary>
     /// CLI Tools Generator.
     /// </summary>
-    public static class Program
+    internal static class Program
     {
         /// <summary>
         /// Run the tools command.

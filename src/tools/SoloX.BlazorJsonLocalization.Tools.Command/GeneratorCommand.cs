@@ -22,7 +22,7 @@ namespace SoloX.BlazorJsonLocalization.Tools
     /// <summary>
     /// Generator command.
     /// </summary>
-    public class GeneratorCommand
+    internal sealed class GeneratorCommand
     {
         private readonly RootCommand rootCommand = new RootCommand("Localization generation command.");
 
@@ -176,10 +176,11 @@ namespace SoloX.BlazorJsonLocalization.Tools
         }
     }
 
+#pragma warning disable CA1812
     /// <summary>
     /// Basic console formatter.
     /// </summary>
-    public class BasicConsoleFormatter : ConsoleFormatter
+    internal sealed class BasicConsoleFormatter : ConsoleFormatter
     {
         /// <summary>
         /// Formatter name.
@@ -214,4 +215,6 @@ namespace SoloX.BlazorJsonLocalization.Tools
 #pragma warning restore CA1062 // Validate arguments of public methods
         }
     }
+#pragma warning restore CA1812
+
 }

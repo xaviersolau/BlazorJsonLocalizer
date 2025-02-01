@@ -165,7 +165,7 @@ namespace SoloX.BlazorJsonLocalization.ITests
                         }
                     }
 
-                    // Loading task must not be completed.
+                    // Loading task must be completed.
                     Assert.True(loadingTask.IsCompleted);
                 },
                 this.testOutputHelper).ConfigureAwait(false);
